@@ -1,5 +1,6 @@
 var myNodelist = document.getElementsByClassName("list");
 var ul = document.getElementsByClassName("myul")[0];
+var input = document.getElementById("newListInput");
 
 // Create close span for every list
 createClose();
@@ -19,6 +20,13 @@ ul.addEventListener("click",(e)=>{
     }
     if(e.target.tagName == "SPAN"){
         e.target.parentElement.parentElement.removeChild(e.target.parentElement);
+    }
+})
+
+//When key "Enter" pressed, addList()
+input.addEventListener("keyup",(e)=>{
+    if(e.key == "Enter"){
+        addList();
     }
 })
 

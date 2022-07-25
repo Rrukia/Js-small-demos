@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.img-container{
+    width: 20vw;
+    max-width: 400px;
+    margin: 50px;
+    margin: 5vh;
+}
+@media screen and (max-width: 600px) {
+    .img{
+        width: 70%;
+        width: 70vw;
+    }
+}
+
+.img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    transition-duration: 0.3s;
+}.img:hover{
+    opacity: 0.9;
+}
+
+.img-canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    overflow: auto;
+
+}
+.closeBtn{
+    position: absolute;
+    right: 10vw;
+    color: aliceblue;
+    font-size: 50px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}.closeBtn:hover{
+    opacity: 0.5;
+}
+.img-container-plus{
+    width: 60vw;
+    margin: auto;
+    transition-duration: 0.3s;
+    margin-top: 100px;
+    margin-top: 10vh;
+}
+/* 制作动画 */
+.animation-in{
+    animation: img-in 0.6s;
+}
+.animation-out{
+    animation: img-out 0.6s;
+}
+@keyframes img-in{
+    0%      {transform: scale(0);}
+    100%    {transform: scale(1);}
+}
+@keyframes img-out {
+    0%      {transform: scale(1);}
+    100%    {transform: scale(0);}
+}
+.img-plus{
+    width: 100%;
+}
+.img-text{
+    color: rgba(255,255,255,0.8);
+    font-size: 30px;
+    text-align: center;
+}

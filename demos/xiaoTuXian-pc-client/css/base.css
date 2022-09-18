@@ -1,0 +1,68 @@
+/* 通用基础样式 */
+
+/* 清除默认 margin 和 padding  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置 border-box */
+* {
+    box-sizing: border-box;
+}
+
+/* 设置网页默认字体大小、行高、字体 等属性*/
+body {
+    font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei",
+    "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    color: #333;
+}
+
+/* 清除列表默认样式 */
+ul,
+li {
+    list-style: none;
+}
+
+/* 清除默认倾斜 */
+em,
+i {
+    font-style: normal;
+}
+
+/* 清除超链接下划线 设定默认颜色 */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* 设置 img 垂直对齐方式为居中对齐（行内对齐方式） */
+img {
+    vertical-align: middle;
+}
+
+/* 清除 input 默认样式，设置默认颜色*/
+input {
+    border: none;
+    outline: none;
+    color: #333;
+}
+
+/* 左、右浮动 */
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* 双伪元素法清除浮动 */
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}

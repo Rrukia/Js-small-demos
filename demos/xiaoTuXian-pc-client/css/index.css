@@ -1,0 +1,323 @@
+/* index 主页 CSS */
+.banner {
+    margin-top: 30px;
+    height: 500px;
+    background-color: #f5f5f5;
+}
+
+.banner .wrapper {
+    position: relative;
+}
+
+.banner .aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 251px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.banner .aside ul li {
+    position: relative;
+    padding-left: 34px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #ffffff;
+}
+    .banner .aside ul li:hover {
+        background-color: #27ba9b;
+    }
+
+.banner .aside ul li span {
+    margin-left: 14px;
+    font-size: 14px;
+}
+
+.banner .aside ul li ::after {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    content: "";
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    margin-right: 19px;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    transform: rotate(50deg);
+    opacity: 0.5;
+}
+
+.banner .prev,
+.banner .next {
+    position: absolute;
+    top: 228px;
+    left: 260px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.2);
+    background-image: url(../images/sprites.png);
+    background-position: 13px -60px;
+}
+
+.banner .next {
+    left: 1185px;
+    background-position: -23px -60px;
+}
+
+
+.banner ol {
+    position: absolute;
+    left: 680px;
+    bottom: 31px;
+}
+
+.banner ol li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.43);
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.banner ol .current {
+    background-color: rgba(255,255,255);
+}
+
+/* 新鲜好物 */
+.goods {
+    position: relative;
+}
+
+.goods .goods-header {
+    line-height: 114px;
+    height: 114px;
+}
+
+.goods .goods-header h2 {
+    float: left;
+    height: 114px;
+    font-size: 29px;
+    font-weight: normal;
+    color: #333333;
+}
+
+.goods .goods-header h2 span {
+    margin-left: 34px;
+    font-size: 16px;
+    color: #999999;
+}
+
+.goods .goods-header a span {
+    float: right;
+    font-size: 16px;
+    color: #999999;
+    cursor: pointer;
+}
+
+.goods .goods-header a span::after {
+    content: "";
+    display: inline-block;
+    margin-left: 15px;
+    width: 7px;
+    height: 13px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -108px;
+}
+
+
+.goods .goods-body ul li{
+    float: left;
+    position: relative;
+    display: inline-block;
+    width: 304px;
+    height: 405px;
+    margin-right: 8px;
+    background-color: #f0f9f4;
+}
+.goods .goods-body ul li:nth-child(4n){
+    margin-right: 0;
+}
+
+.goods .goods-body ul li a{
+    display: inline-block;
+    width: 304px;
+    height: 405px;
+}
+
+.goods .goods-body img {
+    width: 100%;
+}
+
+.goods .goods-body h3 {
+    line-height: 61px;
+    color: #333333;
+    text-align: center;
+}
+
+.goods .goods-body p {
+    font-size: 17px;
+    color: #9a2e1f;
+    text-align: center;
+}
+
+.goods .goods-body p span {
+    font-size: 23px;
+}
+
+.goods .goods-body a>span {
+    position: absolute;
+    left: 17px;
+    top: 18px;
+    padding-top: 5px;
+	border: 1px solid #27ba9b;
+    border-radius: 4px;
+    width: 28px;
+	height: 51px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    color: #27ba9b;
+}
+
+.shengxian .sx-header{
+    height: 96px;
+    line-height: 96px;
+}
+
+.shengxian .sx-header h2 {
+    float: left;
+}
+
+.shengxian .sx-header a span {
+    float: right;
+    margin-left: 64px;
+    font-size: 16px;
+    color: #999999;
+    cursor: pointer;
+}
+
+.shengxian .sx-header a span::after {
+    content: "";
+    display: inline-block;
+    margin-left: 15px;
+    width: 7px;
+    height: 13px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -108px;
+}
+
+.shengxian .sx-header ul {
+    float: right;
+}
+
+.shengxian .sx-header ul li {
+    float: right;
+    margin-right: 20px;
+} 
+
+.shengxian .sx-header ul li a {
+    padding: 2px 7px;
+}
+    .shengxian .sx-header ul li a:hover {
+        background-color: #27ba9b;
+        color: #fefbfc;
+    }
+
+.shengxian .sx-body .left {
+    float: left;
+    width: 242px;
+    height: 617px;
+}
+
+.shengxian .sx-body .right {
+    float: right;
+    width: 980px;
+}
+
+.shengxian .sx-body .right ul {
+    float: left;
+}
+
+.shengxian .sx-body .right ul li{
+    float: left;
+    margin-right: 4px;
+    position: relative;
+    width: 242px;
+    height: 304px;
+}
+    .shengxian .sx-body .right ul li:hover{
+        border: 2px solid #27ba9b;
+    }
+    .shengxian .sx-body .right ul li:nth-child(4n) {
+        margin-right: 0;
+    }
+
+
+.shengxian .sx-body .right ul li a .img{
+    text-align: center;
+    height: 204px;
+} 
+.shengxian .sx-body .right ul li a img {
+    width: 184px;
+    height: 184px;
+}
+
+.shengxian .sx-body .right a p {
+    padding-left: 29px;
+    line-height: 1;
+    font-weight: normal;
+    font-size: 16px;
+    color: #333333;
+}
+
+.shengxian .sx-body .right .price {
+    position: absolute;
+    bottom: 13px;
+    font-size: 17px;
+    color: #9a2e1f;
+}
+
+.shengxian .sx-body .right .price span {
+    font-size: 22px;
+}
+
+.shengxian .sx-body .right .more {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px 54px;
+    width: 242px;
+    height: 84px;
+    background-color: #27ba9b;
+    text-align: center;
+}
+.shengxian .sx-body .right li:hover .more {
+    display: block;
+}
+
+.shengxian .sx-body .right .more a {
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+.shengxian .sx-body .right .more p {
+    padding-left: 0;
+    padding-bottom: 5px;
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid rgba(0,0,0,.1);
+}
+
+.shengxian .sx-body .right .more span {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 13px;
+}

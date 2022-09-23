@@ -1,0 +1,333 @@
+/* 主要内容 */
+.center-body {
+    padding-bottom: 100px;
+    background-color: #f6f6f6;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    margin-top: 30px;
+}
+
+/* 侧边栏 ： aside */
+.main .aside {
+    margin-right: 18px;
+    width: 227px;
+    min-height: 500px;
+    background-color: #ffffff;
+}
+
+.main .aside .user {
+    height: 230px;
+    text-align: center;
+}
+
+.main .aside .user>img{
+    margin-top: 41px;
+    height: 85px;
+    width: 85px;
+}
+
+.main .aside .user h5 {
+    font-size: 18px;
+    color: #333333;
+    font-weight: normal;
+    line-height: 42px;
+}
+
+.main .aside .user p {
+    display: inline-block;
+    width: 93px;
+	height: 26px;
+	background-image: linear-gradient(264deg, #e05e2f 0%, #ea745e 95%);
+    border-radius: 13px;
+    line-height: 26px;
+    color: #f9f9f9;
+    font-size: 14px;
+}
+
+.main .aside .user p img {
+    margin-bottom: 5px;
+    width: 15px;
+	height: 16px;
+}
+
+.main .aside .common {
+    padding-left: 52px;
+    border-top: 1px solid #f4f4f4;
+}
+
+.main .aside .common h5 {
+    line-height: 82px;
+    font-size: 18px;
+    color: #333333;
+}
+
+.main .aside .common ul li {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 26px;
+}
+
+.main .aside .common ul li a:hover{
+    color: #5cb99e;
+    position: relative;
+}
+
+.main .aside .common ul li a:hover::before {
+    position: absolute;
+    left: -16px;
+    top: 6px;
+    display: inline-block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #5cb99e;
+    border-radius: 50%;
+}
+
+.main .aside .help {
+    padding-bottom: 60px;
+}
+
+/* right */
+.main .right {
+    flex: 1;
+    margin-left: 18px;
+    min-height: 500px;
+}
+
+.pannel {
+    padding: 28px 19px;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.pannel .hd {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.pannel .hd h5 {
+    font-size: 22px;
+	font-weight: normal;
+	color: #333333;
+}
+
+.pannel .hd a {
+    margin-top: 8px;
+    margin-right: 15px;
+    font-size: 16px;
+    color: #999999;
+}
+
+.main .right .topbar {
+    display: flex;
+}
+
+.main .right .topbar div{
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.main .right .topbar div a img {
+    margin-bottom: 15px;
+    width: 25px;
+    height: 23px;
+}
+
+.main .right .topbar div:last-child a span {
+    position: relative;
+    top: -3px;
+    font-size: 25px;
+    color: #e05e30;
+}
+
+/* 我的订单 */
+.main .right .orders ul li {
+    display: flex;
+    align-items: center;
+    margin-top: 21px;
+    height: 137px;
+	background-color: #ffffff;
+	border: solid 1px #f4f4f4;
+}
+
+.main .right .orders ul li:first-child {
+    margin-top: 0;
+    border-top: 0;
+}
+
+.main .right .orders ul li div {
+    flex: 1;
+    /* text-align: center; */
+}
+
+.main .right .orders ul li .goods {
+    flex: 2;
+    margin-right: 64px;
+    padding: 17px 0 14px 12px;
+}
+
+.main .right .orders ul li .goods a {
+    display: flex;
+    align-items: center;
+}
+
+.main .right .orders ul li .goods a p {
+    margin-bottom: 0;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #333333;
+}
+
+.main .right .orders ul li .goods a span {
+    margin-right: 5px;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #999999;
+}
+
+.main .right .orders ul li img {
+    width: 107px;
+    height: 107px;
+}
+
+.main .right .orders ul li .status p {
+    padding-left: 7px;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #e05e30;
+}
+
+.main .right .orders ul li .status a {
+    width: 55px;
+	height: 14px;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #999999;
+}
+
+.main .right .orders ul li .price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+}
+
+.main .right .orders ul li .price span {
+    font-size: 14px;
+    color: #9a2e1f;
+}
+
+.main .right .orders ul li .price p {
+    font-size: 14px;
+    color: #333333;
+}
+
+.main .right .orders ul li .confirm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main .right .orders ul li .confirm a:first-child {
+    margin-bottom: 16px;
+    width: 100px;
+	height: 30px;
+	background-color: #5eb69c;
+	border-radius: 2px;
+    text-align: center;
+    line-height: 30px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.main .right .collection .goods ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .right .collection .goods ul li a {
+    display: inline-block;
+    width: 171px;
+    height: 251px;
+}
+
+.main .right .collection .goods ul li img {
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 23px;
+    width: 160px;
+    height: 160px;
+}
+
+.main .right .collection .goods ul li p {
+    margin-bottom: 18px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.main .right .collection .goods ul li a i {
+    font-size: 17px;
+    color: #9a2e1f;
+}
+
+.main .right .collection .goods ul li a span {
+    font-size: 22px;
+    color: #9a2e1f;
+}
+
+.main .right .history .goods ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .right .history .goods ul li a {
+    display: inline-block;
+    width: 171px;
+    height: 251px;
+}
+
+.main .right .history .goods ul li img {
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 23px;
+    width: 160px;
+    height: 160px;
+}
+
+.main .right .history .goods ul li p {
+    margin-bottom: 18px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.main .right .history .goods ul li a i {
+    font-size: 17px;
+    color: #9a2e1f;
+}
+
+.main .right .history .goods ul li a span {
+    font-size: 22px;
+    color: #9a2e1f;
+}
+/* 主要内容 */

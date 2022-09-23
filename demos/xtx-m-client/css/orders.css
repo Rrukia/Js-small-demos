@@ -74,15 +74,126 @@ body {
 .goods {
     display: flex;
     align-items: center;
+    margin-top: 9px;
     height: 107px;
 }
 
 .goods .image {
-    margin-left: 11px;
+    margin:0 11px;
     width: 88px;
     height: 88px;
 }
 
+.goods .goods-msg {
+    flex: 1;
+}
+
+.goods .goods-msg h5 {
+    font-size: 13px;
+    color: #262626;
+}
+
+.goods .goods-msg>span {
+    padding: 3px;
+    border-radius: 2px;
+    background-color: #f7f7f8;
+    font-size: 11px;
+    color: #888888;
+}
+
+.goods .goods-msg p span:first-child {
+    font-size: 9px;
+}
+
+.goods .goods-msg p span:first-child i{
+    font-size: 16px;
+}
+
+.goods .goods-msg p span:last-child {
+    margin-left: 14px;
+    text-decoration: line-through;
+    font-size: 9px;
+    color: #999999;
+}
+
+.goods .goods-msg p span:last-child i {
+    font-size: 12px;
+}
+
+.goods .count a{
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 15px;
+    color: #262626;
+}
+
+/* 其他选项 */
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 14px 15px 16px 13px;
+    margin-top: 6px;
+    height: 125px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #262626;
+}
+
+.options .peisong {
+    display: flex;
+    justify-content: space-between;
+}
+
+.beizhu {
+    display: flex;
+}
+
+.beizhu div {
+    margin-right: 19px;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.beizhu input::placeholder {
+    font-size: 12px;
+    color: #989898;
+}
+
+.zhifu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.zhifu .right .iconfont {
+    color: #808080;
+}
+
+/* 价格计算 */
+.main .price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 13px 15px;
+    height: 125px;
+    font-size: 13px;
+    color: #262626;
+}
+
+.main .price .sum,
+.main .price .freight,
+.main .price .discount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .price .discount .right {
+    color: #cf4444;
+}
 
 /* 可滑动区域 */
 

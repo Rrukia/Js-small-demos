@@ -431,27 +431,8 @@ template {
 [hidden] {
   display: none;
 }
-.footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  height: 1.30666667rem;
-  width: 100%;
-  background-color: #FECA49;
-}
-.footer a {
-  padding: 0 0.3rem;
-  text-align: center;
-  color: #fefefe;
-}
-.footer a i {
-  font-size: 0.64rem;
-}
-.footer a p {
-  font-size: 0.29333333rem;
+.main {
+  margin-bottom: 1.30666667rem;
 }
 .main .banner {
   width: 100%;
@@ -528,4 +509,26 @@ template {
   color: #ffffff;
   text-align: center;
   line-height: 0.76rem;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 1.30666667rem;
+  width: 100%;
+  background-color: #FECA49;
+}
+.footer a {
+  padding: 0 0.3rem;
+  text-align: center;
+  color: #fefefe;
+}
+.footer a i {
+  font-size: 0.64rem;
+}
+.footer a p {
+  font-size: 0.29333333rem;
 }

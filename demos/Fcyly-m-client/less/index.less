@@ -3,33 +3,8 @@
 
 @rootSize : 37.5rem;
 
-.footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: (49 / @rootSize);
-    width: 100%;
-    background-color: #FECA49;
-
-    a {
-        padding: 0 0.3rem;
-        text-align: center;
-        color: #fefefe;
-        
-        i {
-            font-size: (24 / @rootSize);
-        }
-
-        p {
-            font-size: (11 / @rootSize);
-        }
-    }
-}
-
 .main {
+    margin-bottom: (49 / @rootSize);
     .banner {
         width: 100%;
         height: (160 / @rootSize);
@@ -116,6 +91,32 @@
                 text-align: center;
                 line-height: (28.5 / @rootSize);
             }
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: (49 / @rootSize);
+    width: 100%;
+    background-color: #FECA49;
+
+    a {
+        padding: 0 0.3rem;
+        text-align: center;
+        color: #fefefe;
+        
+        i {
+            font-size: (24 / @rootSize);
+        }
+
+        p {
+            font-size: (11 / @rootSize);
         }
     }
 }

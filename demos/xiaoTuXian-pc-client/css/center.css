@@ -164,7 +164,7 @@
     border-top: 0;
 }
 
-.main .right .orders ul li div {
+.main .right .orders ul li>div {
     flex: 1;
     /* text-align: center; */
 }
@@ -180,6 +180,10 @@
     align-items: center;
 }
 
+.main .right .orders ul li .goods a div {
+    width: 210px;
+}
+
 .main .right .orders ul li .goods a p {
     margin-bottom: 0;
 	font-size: 16px;
@@ -187,6 +191,9 @@
 	font-stretch: normal;
 	letter-spacing: 0px;
 	color: #333333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .main .right .orders ul li .goods a span {

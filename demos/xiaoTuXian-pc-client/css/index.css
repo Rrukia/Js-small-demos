@@ -133,7 +133,6 @@
 .goods .goods-body ul li{
     float: left;
     position: relative;
-    display: inline-block;
     width: 304px;
     height: 405px;
     margin-right: 8px;

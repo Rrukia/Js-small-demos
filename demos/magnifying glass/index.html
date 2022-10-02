@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .goods{
+            position: relative;
+            margin: 10px;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            background-image: url(./b3.png);
+            background-size: 300px 300px;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+        }
+        .goods .biggoods{
+            position: absolute;
+            left: 300px;
+            top: -1px;
+            width: 450px;
+            height: 450px;
+            border: 1px solid black;
+            background-image: url(./big.jpg);
+            background-size: 900px;
+            background-repeat: no-repeat;
+        }
+        .goods .mask{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+            opacity: .5;
+            cursor: move;
+        }
+    </style>
+</head>
+<body>
+    <div class="goods">
+        <div class="mask"></div>
+        <div class="biggoods"></div>
+    </div>
+
+    <script>
+        let goods = document.querySelector('.goods');
+        
+        goods.addEventListener('mouseenter',(e)=>{
+            let mask = document.querySelector('.goods .mask');
+            let biggoods = document.querySelector('.goods .biggoods');
+            let left;
+            let top;
+
+            goods.addEventListener('mousemove',move);
+            show();
+
+            goods.addEventListener('mouseleave',(e)=>{
+                goods.removeEventListener('mousemove',move);
+                hide();
+            });
+
+            function move(e) {
+                let maskLeft;
+                let maskTop;
+
+                left = e.pageX - goods.offsetLeft;
+                top = e.pageY - goods.offsetTop;
+
+                maskLeft = left - mask.offsetWidth/2;     
+                maskTop = top - mask.offsetHeight/2;
+
+                maskLeft = maskLeft <= 0 ? 0 : maskLeft;
+                maskLeft = maskLeft >= (goods.offsetWidth - mask.offsetWidth) ? (goods.offsetWidth - mask.offsetWidth) : maskLeft;
+
+                maskTop = maskTop <= 0 ? 0 : maskTop;
+                maskTop = maskTop >= (goods.offsetHeight - mask.offsetHeight) ? (goods.offsetHeight - mask.offsetHeight) : maskTop;
+
+                mask.style.left = maskLeft + 'px';
+                mask.style.top = maskTop + 'px';
+
+                biggoods.style.backgroundPosition = `${-3*maskLeft}px ${-3*maskTop}px`;
+            }
+
+            function show(){
+                biggoods.style.display = 'block';
+                mask.style.display = 'block';
+            }
+
+            function hide(){
+                biggoods.style.display = 'none';
+                mask.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

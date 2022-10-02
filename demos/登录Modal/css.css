@@ -6,6 +6,7 @@
 
 body{
     padding: 20px;
+    min-height: 20000px;
 }
 
 .myBtn{
@@ -36,12 +37,13 @@ body{
 }
 
 .modal-content{
+    position: absolute;
+    left: 30vw;
+    top: 6vw;
     background-color: whitesmoke;
-    margin: 5% auto 15% auto;
-    width: 40%;
+    width: 40vw;
     border: 1px solid black;
     padding: 5%;
-    position: relative;
 }
 
 .modal span.close{
@@ -95,9 +97,11 @@ body{
 
 @media screen and (max-width: 768px) {
     .modal-content{
+        position: absolute;
+        left: 15vw;
+        top: 10vw;
         background-color: whitesmoke;
-        margin: 5% auto 15% auto;
-        width: 70%;
+        width: 70vw;
         border: 1px solid black;
         padding: 5%;
         position: relative;

@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.container {
+  position: relative;
+  margin: 100px auto 0 auto;
+  width: 770px;
+  height: 434px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+.container .slides {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  width: max-content;
+  height: 100%;
+}
+.container .slides li {
+  width: 100%;
+  height: 100%;
+}
+.container .slides li img {
+  height: 100%;
+}
+.container .next,
+.container .prev {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 25px);
+  display: none;
+  width: 30px;
+  height: 50px;
+  line-height: 50px;
+  color: rgba(240, 255, 255, 0.3);
+  text-align: center;
+  border: 1px solid rgba(240, 255, 255, 0.3);
+  border-left: 0;
+  border-radius: 0 5px 5px 0;
+  background-color: rgba(240, 255, 255, 0.3);
+  transition: all 0.3s;
+  animation: btnFadein 0.3s;
+}
+@keyframes btnFadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container .next:hover,
+.container .prev:hover {
+  color: rgba(240, 255, 255, 0.8);
+  background-color: rgba(240, 255, 255, 0.8);
+}
+.container .next {
+  left: auto;
+  right: 0;
+  border-radius: 5px 0 0 5px;
+  border-left: 1px solid rgba(240, 255, 255, 0.3);
+  border-right: 0;
+}
+.container ol {
+  display: flex;
+  position: absolute;
+  left: 10%;
+  bottom: 5%;
+}
+.container ol li {
+  display: block;
+  margin-right: 4px;
+  width: 15px;
+  height: 5px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.container ol li:hover {
+  opacity: 0.8;
+}
+.container ol .currentCircle {
+  width: 40px;
+  opacity: 0.9;
+}

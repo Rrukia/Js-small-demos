@@ -1,0 +1,5 @@
+// JavaScript Document
+/* $(function(){
+	 html = '<a class="ad-tip" href="/about/cooperation/index.html" target="_blank" ><span>Swiper </span>广告</a><a href="https://item.taobao.com/item.htm?id=605484623269" target="_blank"><img src="/templets/default/images/swiperAd1.png"></a>';
+	 $('.swiperAd').html(html)
+})*/

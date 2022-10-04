@@ -1,0 +1,1767 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://www.swiper.com.cn/demo/index.html -->
+<html class="no-touch"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Swiper演示 - Swiper中文网</title>
+<meta name="keywords" content="Swiper，Swiper在线演示，Swiper中文演示，Swiper效果演示，swiper demos">
+<meta name="description" content="收录了Swiper的40多个在线示例（swiper demos），Swiper是纯javascript打造的滑动特效插件，面向手机、平板电脑等移动终端，以及PC端网站能实现触屏焦点图、触屏Tab切换、触屏多图切换等常用效果。">
+<meta content="always" name="referrer">
+<link href="./Swiper演示 - Swiper中文网_files/base.css" rel="stylesheet" type="text/css">
+<link href="./Swiper演示 - Swiper中文网_files/layout.css" rel="stylesheet" type="text/css">
+<link href="./Swiper演示 - Swiper中文网_files/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+<script src="./Swiper演示 - Swiper中文网_files/f.txt"></script><script src="./Swiper演示 - Swiper中文网_files/f(1).txt" id="google_shimpl"></script><script src="./Swiper演示 - Swiper中文网_files/hm.js.下载"></script><script src="./Swiper演示 - Swiper中文网_files/jquery-1.10.1.min.js.下载"></script> 
+<script src="./Swiper演示 - Swiper中文网_files/swiper-bundle.min.js.下载"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?6387fcb06c7f33ad6787ab913d4e6d10";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<meta http-equiv="origin-trial" content="A+cA2PUOfIOKAdSDJOW5CP9ZlxONy1yu+hqAq72zUtKw4rLdihqRp6Nui/jUyCyegr+BUtH+C+Elv0ufn05yBQEAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+zsdH3aNZT/bkjT8U/o5ACzyaeNYzTvtoVmwf/KOilfv39pxY2AIsOwhQJv+YnXp98i3TqrQibIVtMWs5UHjgoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="AxceVEhIegcDEHqLXFQ2+vPKqzCppoJYsRCZ/BdfVnbM/sUUF2BXV8lwNosyYjvoxnTh2FC8cOlAnA5uULr/zAUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+cA2PUOfIOKAdSDJOW5CP9ZlxONy1yu+hqAq72zUtKw4rLdihqRp6Nui/jUyCyegr+BUtH+C+Elv0ufn05yBQEAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+zsdH3aNZT/bkjT8U/o5ACzyaeNYzTvtoVmwf/KOilfv39pxY2AIsOwhQJv+YnXp98i3TqrQibIVtMWs5UHjgoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="AxceVEhIegcDEHqLXFQ2+vPKqzCppoJYsRCZ/BdfVnbM/sUUF2BXV8lwNosyYjvoxnTh2FC8cOlAnA5uULr/zAUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><link rel="preload" href="./Swiper演示 - Swiper中文网_files/f(2).txt" as="script"><script type="text/javascript" src="./Swiper演示 - Swiper中文网_files/f(2).txt"></script><style type="text/css">.TnITTtw-fp-collapsed-button {
+    display: none;
+    position: fixed !important;
+    top: 16px !important;
+    right: 16px !important;
+}
+
+.TnITTtw-fp-collapsed-button:hover {
+    opacity: 1.0 !important;
+}
+
+.TnITTtw-mate-fp-bar {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, Ubuntu, sans-serif !important;
+    color: #000;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 999;
+    background: rgb(255 255 255 / 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 16px;
+    border-radius: 11px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 25%);
+    width: 320px;
+    line-height: initial;
+}
+
+@-moz-document url-prefix() {
+    .TnITTtw-mate-fp-bar {
+        background: rgb(255 255 255 / 1.0);
+    }
+}
+
+.TnITTtw-mate-fp-bar.TnITTtw-dark-mode {
+    background: rgb(44, 44, 43);
+}
+
+.TnITTtw-hide-fp-bar {
+    width: 12px;
+    height: 12px;
+    background-image: url(chrome-extension://kacbklkbjmnjkhnellgciecdogkkldoj/res/images/ui/regular-close-tt.png) !important;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.TnITTtw-hide-fp-bar:hover {
+    background-image: url(chrome-extension://kacbklkbjmnjkhnellgciecdogkkldoj/res/images/ui/hover-close-tt.png) !important;
+}
+
+.TnITTtw-current-page-lang {
+    color: #6d6d72;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.TnITTtw-dark-mode .TnITTtw-current-page-lang {
+    color: #98989D;
+}
+
+.TnITTtw-fp-translate {
+    width: calc(100% - 73px) !important;
+    font-size: 14px !important;
+    text-transform: none !important;
+}
+
+.TnITTtw-fp-translate.TnITTtw-in-progress {
+    animation-name: funky-bg;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+}
+
+.TnITTtw-fp-translate.TnITTtw-show-original {
+    width: calc(100% - 20px) !important;
+}
+
+@keyframes funky-bg {
+    from {
+        background-image: linear-gradient(145deg, #01EF92, #00D8FB),
+        linear-gradient(35deg, rgba(1, 239, 146, 0.25), rgba(0, 216, 251, 0.25)) !important;
+    }
+
+    to {
+        background-image: linear-gradient(90deg, #01EF92, #00D8FB),
+        linear-gradient(35deg, rgba(1, 239, 146, 0.25), rgba(0, 216, 251, 0.25)) !important;
+    }
+}
+
+.TnITTtw-change-language, .TnITTtw-stop-fp {
+    width: 38px;
+    height: 38px;
+    background-color: #EFEFF4;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 16px;
+    border-radius: 11px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.TnITTtw-change-language {
+    background-image: url(chrome-extension://kacbklkbjmnjkhnellgciecdogkkldoj/res/images/ui/globe-earth.png) !important;
+}
+
+.TnITTtw-dark-mode .TnITTtw-change-language {
+    background-image: url(chrome-extension://kacbklkbjmnjkhnellgciecdogkkldoj/res/images/ui/globe-earth-dark.png) !important;
+}
+
+.TnITTtw-stop-fp {
+    display: none;
+    background-image: url(chrome-extension://kacbklkbjmnjkhnellgciecdogkkldoj/res/images/ui/regular-stt-stop.png) !important;
+    background-size: 12px 12px;
+}
+
+.TnITTtw-dark-mode .TnITTtw-change-language, .TnITTtw-dark-mode .TnITTtw-stop-fp {
+    background-color: #525251 !important;
+}
+
+.TnITTtw-change-language:hover, .TnITTtw-stop-fp:hover {
+    background-color: #F6F6F6;
+}
+
+.TnITTtw-change-language:active, .TnITTtw-stop-fp:active {
+    background-color: #E9E9E9;
+}
+
+.TnITTtw-dark-mode .TnITTtw-change-language:hover,
+.TnITTtw-dark-mode .TnITTtw-stop-fp:hover,
+.TnITTtw-dark-mode .TnITTtw-change-language:active,
+.TnITTtw-dark-mode .TnITTtw-stop-fp:active {
+    background-color: #767675;
+}
+
+#TnITTtw-always-translate {
+}
+
+.TnITTtw-fp-options input {
+    padding: initial;
+    width: auto;
+    border: initial;
+    box-shadow: initial;
+    line-height: initial;
+    height: auto;
+    display: initial;
+    position: initial;
+    appearance: auto;
+    top: initial;
+    cursor: pointer;
+    margin: 0;
+}
+
+.TnITTtw-fp-options input[readonly="readonly"] {
+    opacity: 0.5;
+}
+
+#TnITTtw-always-translate + label,
+#TnITTtw-never-translate-lang + label,
+#TnITTtw-never-translate-site + label {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, Ubuntu, sans-serif !important;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 4px;
+    color: #000;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 296px;
+    vertical-align: top;
+    line-height: initial;
+    letter-spacing: initial;
+    text-transform: initial;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#TnITTtw-always-translate + label::before,
+#TnITTtw-never-translate-lang + label::before,
+#TnITTtw-never-translate-site + label::before,
+#TnITTtw-always-translate + label::after,
+#TnITTtw-never-translate-lang + label::after,
+#TnITTtw-never-translate-site + label::after  {
+    content: initial;
+} 
+
+.TnITTtw-always-translate-inner-label {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 252px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.TnITTtw-dark-mode #TnITTtw-always-translate + label,
+.TnITTtw-dark-mode #TnITTtw-never-translate-lang + label,
+.TnITTtw-dark-mode #TnITTtw-never-translate-site + label {
+    color: #FFF;
+}
+
+#TnITTtw-always-translate + label.TnITTtw-not-pro {
+    opacity: 0.5;
+}
+
+#TnITTtw-always-translate + label .TnITTtw-pro-label {
+    position: relative;
+    background: #000;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #FFF;
+    padding: 2px 5px;
+    border-radius: 4px;
+    margin-left: 10px;
+    top: -1px;
+    user-select: none;
+    -webkit-user-select: none;
+    display: inline;
+    font-weight: 500;
+}
+
+.TnITTtw-dark-mode #TnITTtw-always-translate + label .TnITTtw-pro-label {
+    background: #FFF;
+    color: #000;
+}
+
+.TnITTtw-inline-original-tooltip {
+    display: none;
+    position: absolute;
+    margin: 0px;
+    border: none;
+    padding: 16px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255 255 255 / 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 11px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 25%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, Ubuntu, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.TnITTtw-dark-mode.TnITTtw-inline-original-tooltip {
+    background-color: rgb(0 0 0 / 0.915);
+    color: #FFF;
+}
+
+.TnITTtw-inline-original-tooltip .TnITTtw-close-original-tooltip {
+    width: 12px;
+    height: 12px;
+    background-image: url(chrome-extension://kacbklkbjmnjkhnellgciecdogkkldoj/res/images/ui/regular-close-tt.png) !important;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.TnITTtw-inline-original-tooltip .TnITTtw-close-original-tooltip:hover {
+    background-image: url(chrome-extension://kacbklkbjmnjkhnellgciecdogkkldoj/res/images/ui/hover-close-tt.png) !important;
+}
+
+.TnITTtw-inline-original-tooltip .TnITTtw-original-label {
+    margin: 0;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #6d6d72;
+    margin-bottom: 10px;
+}
+
+.TnITTtw-inline-original-tooltip.TnITTtw-dark-mode .TnITTtw-original-label {
+    color: #98989D;
+}
+
+.TnITTtw-inline-original-tooltip .TnITTtw-text-layout {
+    display: inline-block;
+    margin: 0;
+    font-size: 16px;
+    color: #000;
+}
+
+.TnITTtw-inline-original-tooltip.TnITTtw-dark-mode .TnITTtw-text-layout {
+    color: #FFF;
+}
+
+.TnITTtw-highlighted-for-original {
+    color: #0F0F5F;
+    background-color: #F0F0A0;
+}
+
+/* Dropdown scrollbars */
+
+#selVisibleScroll-1, #selVisibleScroll-2, #selVisibleScroll-3 {
+    overflow: hidden;
+    height: 259px;
+    width: 100%;
+    position: relative;
+}
+
+#sel-scrollbar-1, #sel-scrollbar-2, #sel-scrollbar-3 {
+    position: absolute;
+    width: 4px;
+    height: 259px;
+    left: 225px;
+}
+
+#sel-track-1, #sel-track-2, #sel-track-3 {
+    position: absolute;
+    top: 1px;
+    width: 4px;
+    height: calc(100% - 6px);
+}
+
+#sel-dragBar-1, #sel-dragBar-2, #sel-dragBar-3 {
+    position: absolute;
+    top: 1px;
+    width: 4px;
+    background: rgba(43, 43, 43, 0.5);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.dark-mode #sel-dragBar-1, .dark-mode #sel-dragBar-2, .dark-mode #sel-dragBar-3 {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#sel-dragBar-1:hover, #sel-dragBar-2:hover, #sel-dragBar-3:hover, 
+#sel-dragBar-1:active, #sel-dragBar-2:active, #sel-dragBar-3:active {
+    background: rgba(43, 43, 43, 0.675);
+}
+
+.dark-mode #sel-dragBar-1:hover,
+.dark-mode #sel-dragBar-2:hover,
+.dark-mode #sel-dragBar-3:hover,
+.dark-mode #sel-dragBar-1:active,
+.dark-mode #sel-dragBar-2:active,
+.dark-mode #sel-dragBar-3:active {
+    background: rgba(255, 255, 255, 0.675);
+}
+
+#sel-scrollbar-1, #sel-track-1, #sel-dragBar-1, 
+#sel-scrollbar-2, #sel-track-2, #sel-dragBar-2,
+#sel-scrollbar-3, #sel-track-3, #sel-dragBar-3 {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Spinner for when it's translating a page */
+
+.TnITTtw-cta-button-layout {
+    position: relative;
+    display: inline;
+}
+
+.TnITTtw-spinner {
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+  @media screen and (max-width: 800px) {
+    .TnITTtw-spinner {
+      top: 28px;
+    }
+  }
+
+  .TnITTtw-spinner.in-text {
+    display: block;
+    background: transparent;
+    position: initial;
+  }
+
+  .TnITTtw-spinner.left {
+    text-align: left;
+  }
+  
+  .TnITTtw-spinner > div {
+    width: 12px;
+    height: 12px;
+    background-color: rgb(0, 71, 46);
+  
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  }
+
+  .TnITTtw-spinner.in-text > div {
+    background-color: #000;
+  }
+  
+  .TnITTtw-spinner .TnITTtw-bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+  }
+  
+  .TnITTtw-spinner .TnITTtw-bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+  }
+  
+  @-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0) }
+    40% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bouncedelay {
+    0%, 80%, 100% { 
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    } 40% { 
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+    }
+  }</style><style type="text/css">/*
+ * contextMenu.js v 1.4.0
+ * Author: Sudhanshu Yadav
+ * s-yadav.github.com
+ * Copyright (c) 2013 Sudhanshu Yadav.
+ * Dual licensed under the MIT and GPL licenses
+**/
+
+.iw-contextMenu {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.10) !important;
+    border: 1px solid #c8c7cc !important;
+    border-radius: 11px !important;
+    display: none;
+    z-index: 1000000132;
+    max-width: 300px !important;
+    width: auto !important;
+}
+
+.dark-mode .iw-contextMenu,
+.TnITTtw-dark-mode.iw-contextMenu,
+.TnITTtw-dark-mode .iw-contextMenu {
+    border-color: #747473 !important;
+}
+
+.iw-cm-menu {
+    background: #fff !important;
+    color: #000 !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    overflow: visible !important;
+}
+
+.dark-mode .iw-cm-menu,
+.TnITTtw-dark-mode.iw-cm-menu,
+.TnITTtw-dark-mode .iw-cm-menu {
+    background: #525251 !important;
+    color: #FFF !important;
+}
+
+.iw-curMenu {
+}
+
+.iw-cm-menu li {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, Ubuntu, sans-serif !important;
+    list-style: none !important;
+    padding: 10px !important;
+    padding-right: 20px !important;
+    border-bottom: 1px solid #c8c7cc !important;
+    font-weight: 400 !important;
+    cursor: pointer !important;
+    position: relative !important;
+    font-size: 14px !important;
+    margin: 0 !important;
+    line-height: inherit !important;
+    border-radius: 0 !important;
+    display: block !important;
+}
+
+.dark-mode .iw-cm-menu li, .TnITTtw-dark-mode .iw-cm-menu li {
+    border-bottom-color: #747473 !important;
+}
+
+.iw-cm-menu li:first-child {
+    border-top-left-radius: 11px !important;
+    border-top-right-radius: 11px !important;
+}
+
+.iw-cm-menu li:last-child {
+    border-bottom-left-radius: 11px !important;
+    border-bottom-right-radius: 11px !important;
+    border-bottom: none !important;
+}
+
+.iw-mOverlay {
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0px !important;
+    left: 0px !important;
+    background: #FFF !important;
+    opacity: .5 !important;
+}
+
+.iw-contextMenu li.iw-mDisable {
+    opacity: 0.3 !important;
+    cursor: default !important;
+}
+
+.iw-mSelected {
+    background-color: #F6F6F6 !important;
+}
+
+.dark-mode .iw-mSelected, .TnITTtw-dark-mode .iw-mSelected {
+    background-color: #676766 !important;
+}
+
+.iw-cm-arrow-right {
+    width: 0 !important;
+    height: 0 !important;
+    border-top: 5px solid transparent !important;
+    border-bottom: 5px solid transparent !important;
+    border-left: 5px solid #000 !important;
+    position: absolute !important;
+    right: 5px !important;
+    top: 50% !important;
+    margin-top: -5px !important;
+}
+
+.dark-mode .iw-cm-arrow-right, .TnITTtw-dark-mode .iw-cm-arrow-right {
+    border-left-color: #FFF !important;
+}
+
+.iw-mSelected > .iw-cm-arrow-right {
+}
+
+/*context menu css end */</style><style type="text/css">.ui_selector, .TnITTtw-ui_selector {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, Ubuntu, sans-serif;
+    display: inline-block;
+}
+
+.ui_selector .select, .TnITTtw-ui_selector .TnITTtw-select {
+    color: #000;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid rgba(200, 199, 204, 0.5);
+    padding: 10px 15px;
+    width: 201px;
+    -webkit-user-select: none;
+    cursor: pointer;
+    border-radius: 11px;
+    display: inline-block;
+    background-image: -webkit-linear-gradient(top, #FAFAFA, #F6F6F6);
+    background-image: -moz-linear-gradient(top, #FAFAFA, #F6F6F6);
+    background-size: auto 48px;
+    background-position: 0px -11px;
+    box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.10);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.dark-mode .ui_selector .select, 
+.TnITTtw-dark-mode .TnITTtw-ui_selector .TnITTtw-select {
+    background-image: -webkit-linear-gradient(top, #4A4A49, #40403F);
+    background-image: -moz-linear-gradient(top, #4A4A49, #40403F);
+    color: #FFF;
+    border-color: #747473;
+}
+
+.ui_selector .select:hover,
+.TnITTtw-ui_selector .TnITTtw-select:hover {
+    color: #424242;
+    background-image: -webkit-linear-gradient(top, #FAFAFA, #FAFAFA);
+    background-image: -moz-linear-gradient(top, #FAFAFA, #FAFAFA);
+}
+
+.ui_selector .select:active,
+.TnITTtw-ui_selector .TnITTtw-select:active {
+    color: #6d6d72;
+    background-image: -webkit-linear-gradient(top, #F6F6F6, #F6F6F6);
+    background-image: -moz-linear-gradient(top, #F6F6F6, #F6F6F6);
+}
+
+.dark-mode .ui_selector .select:hover,
+.dark-mode .ui_selector .select:active,
+.TnITTtw-dark-mode .TnITTtw-ui_selector .TnITTtw-select:hover,
+.TnITTtw-dark-mode .TnITTtw-ui_selector .TnITTtw-select:active {
+    background-image: -webkit-linear-gradient(top, #4A4A49, #4A4A49);
+    background-image: -moz-linear-gradient(top, #4A4A49, #4A4A49);
+    color: #FFF;
+    border-color: #747473;
+}
+
+.ui_selector .select .detected-ico,
+.TnITTtw-ui_selector .TnITTtw-select .TnITTtw-detected-ico {
+    display: inline-block;
+}
+
+.ui_selector .active, .ui_selector .active:hover, .ui_selector .active:active,
+.TnITTtw-ui_selector .TnITTtw-active, .TnITTtw-ui_selector .TnITTtw-active:hover, .TnITTtw-ui_selector .TnITTtw-active:active {
+    box-shadow: 0 -1px 15px -10px rgba(0, 0, 0, 0.85) !important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background: #F3F3F3;
+}
+
+.sliding-text,
+.TnITTtw-sliding-text {
+    position: relative;
+}
+
+.ui_selector .options,
+.TnITTtw-ui_selector .TnITTtw-options {
+    margin-left: 0px;
+    margin-top: -4px;
+    background: #fff;
+    border: 1px solid rgba(200, 199, 204, 0.5);
+    width: 231px;
+    overflow: hidden;
+    max-height: 313px;
+    position: absolute;
+    font-size: 12px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 25%);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: none;
+}
+
+.ui_selector .options.standalone,
+.TnITTtw-ui_selector .TnITTtw-options.TnITTtw-standalone {
+    border-radius: 11px;
+    margin-top: 16px;
+}
+
+/* for now, it can only be on the top */
+.ui_selector .options-arrow,
+.TnITTtw-ui_selector .TnITTtw-options-arrow {
+    display: none;
+    position: absolute;
+    width: 32px !important;
+    height: 18px !important;
+    background-image: url(chrome-extension://kacbklkbjmnjkhnellgciecdogkkldoj/res/images/ui/tt-dropdown-arrow.png);
+    background-size: 32px 18px;
+    transform: rotate(180deg);
+    margin-top: -1px;
+}
+
+.dark-mode .ui_selector .options-arrow,
+.TnITTtw-dark-mode .TnITTtw-ui_selector .TnITTtw-options-arrow {
+    background-image: url(chrome-extension://kacbklkbjmnjkhnellgciecdogkkldoj/res/images/ui/tt-dropdown-arrow-dark.png);
+}
+
+.dark-mode .ui_selector .options,
+.TnITTtw-dark-mode .TnITTtw-ui_selector .TnITTtw-options {
+    background: #525251;
+}
+
+.ui_selector .options ul,
+.TnITTtw-ui_selector .TnITTtw-options ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 232px;
+}
+
+.ui_selector .options ul li,
+.TnITTtw-ui_selector .TnITTtw-options ul li {
+    padding: 10px 0px;
+    -webkit-user-select: none;
+    text-align: center;
+    font-size: 17px;
+    -webkit-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+    margin: 0 10px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.dark-mode .options ul li,
+.TnITTtw-dark-mode .TnITTtw-options ul li {
+    color: #fff;
+}
+
+.ui_selector .options ul li:last-child,
+.TnITTtw-ui_selector .TnITTtw-options ul li:last-child {
+    margin-bottom: 16px;
+}
+
+.ui_selector .options ul li.option:first-child,
+.ui_selector .options ul li.option_selected:first-child,
+.TnITTtw-ui_selector .TnITTtw-options ul li.TnITTtw-option:first-child,
+.TnITTtw-ui_selector .TnITTtw-options ul li.TnITTtw-option_selected:first-child {
+    margin-top: 16px;
+}
+
+.ui_selector .options ul li.whenHover,
+.TnITTtw-ui_selector .TnITTtw-options ul li.TnITTtw-whenHover {
+    cursor: pointer;
+    background: #f3f3f3;
+    text-align: center;
+}
+
+.dark-mode .ui_selector .options ul li.whenHover,
+.TnITTtw-dark-mode .TnITTtw-ui_selector .TnITTtw-options ul li.TnITTtw-whenHover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.ui_selector .options ul li.option_selected,
+.TnITTtw-ui_selector .TnITTtw-options ul li.TnITTtw-option_selected {
+    cursor: pointer;
+    background-image: linear-gradient(145deg, #01EF92, #00D8FB),
+    linear-gradient(35deg, rgba(1, 239, 146, 0.25), rgba(0, 216, 251, 0.25)) !important;
+    color: #fff;
+    font-weight: 600;
+}
+
+.ui_selector .options ul .group,
+.ui_selector .options ul .group:hover,
+.ui_selector .options ul .group.whenHover,
+.TnITTtw-ui_selector .TnITTtw-options ul .TnITTtw-group,
+.TnITTtw-ui_selector .TnITTtw-options ul .TnITTtw-group:hover,
+.TnITTtw-ui_selector .TnITTtw-options ul .TnITTtw-group.whenHover {
+    padding: 16px 10px;
+    color: #8e8e93;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+    cursor: default;
+    background: #FFF;
+}
+
+.dark-mode .ui_selector .options ul .group,
+.dark-mode .ui_selector .options ul .group:hover,
+.dark-mode .ui_selector .options ul .group.whenHover,
+.TnITTtw-dark-mode .TnITTtw-ui_selector .TnITTtw-options ul .TnITTtw-group,
+.TnITTtw-dark-mode .TnITTtw-ui_selector .TnITTtw-options ul .TnITTtw-group:hover,
+.TnITTtw-dark-mode .TnITTtw-ui_selector .TnITTtw-options ul .TnITTtw-group.TnITTtw-whenHover {
+    color: #98989D;
+    background: #525251;
+}
+
+.group-element,
+.TnITTtw-group-element {
+    width: 153px;
+}
+
+.options .dd-search,
+.TnITTtw-options .TnITTtw-dd-search {
+    border-bottom: 1px solid rgba(200, 199, 204, 0.5);
+}
+
+.dark-mode .options .dd-search,
+.TnITTtw-dark-mode .TnITTtw-options .TnITTtw-dd-search {
+    border-bottom-color: #747473;
+}
+
+.dd-search .dd-input,
+.TnITTtw-dd-search .TnITTtw-dd-input {
+    padding: 16px;
+    padding-left: calc(16px * 3);
+    width: 168px;
+    border: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, Ubuntu, sans-serif;
+    text-align: left;
+    color: #000;
+    font-size: 17px;
+    background-image: url(chrome-extension://kacbklkbjmnjkhnellgciecdogkkldoj/res/images/ui/searchfield-icon.png);
+    background-position: 16px;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: auto;
+}
+
+.dark-mode .dd-search .dd-input,
+.TnITTtw-dark-mode .TnITTtw-dd-search .TnITTtw-dd-input {
+    color: #FFF;
+    background-color: #525251;
+}
+
+.dd-search .dd-input:focus,
+.TnITTtw-dd-search .TnITTtw-dd-input:focus {
+    -webkit-transition: all 275ms cubic-bezier(0.23, 1, 0.32, 1);
+    outline: none;
+    text-align: left;
+}
+
+.dd-input::-webkit-input-placeholder,
+.TnITTtw-dd-input::-webkit-input-placeholder {
+    color: #8e8e93;
+}
+
+.search-failed-plaque,
+.TnITTtw-search-failed-plaque {
+    text-align: center;
+    padding: 20px;
+    color: #8e8e93;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.dark-mode .search-failed-plaque,
+.TnITTtw-dark-mode .TnITTtw-search-failed-plaque {
+    color: #98989D;
+}
+
+.rm-recent,
+.TnITTtw-rm-recent {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-image: url(chrome-extension://kacbklkbjmnjkhnellgciecdogkkldoj/res/images/ui/regular-lang-remove.png);
+    background-size: 10px 10px;
+    top: 15px;
+    right: 10px;
+}
+
+.rm-recent:hover,
+.TnITTtw-rm-recent:hover {
+    background-image: url(chrome-extension://kacbklkbjmnjkhnellgciecdogkkldoj/res/images/ui/hover-lang-remove.png);
+}
+
+.rm-recent:active,
+.TnITTtw-rm-recent:active {
+    background-image: url(chrome-extension://kacbklkbjmnjkhnellgciecdogkkldoj/res/images/ui/down-lang-remove.png);
+}
+
+.option_selected .rm-recent,
+.TnITTtw-option_selected .TnITTtw-rm-recent {
+    background-image: url(chrome-extension://kacbklkbjmnjkhnellgciecdogkkldoj/res/images/ui/down-active-lang-remove.png);
+}
+
+.option_selected .rm-recent:hover,
+.TnITTtw-option_selected .TnITTtw-rm-recent:hover {
+    background-image: url(chrome-extension://kacbklkbjmnjkhnellgciecdogkkldoj/res/images/ui/hover-active-lang-remove.png);
+}
+
+.option_selected .rm-recent:active,
+.TnITTtw-option_selected .TnITTtw-rm-recent:active {
+    background-image: url(chrome-extension://kacbklkbjmnjkhnellgciecdogkkldoj/res/images/ui/down-active-lang-remove.png);
+}
+
+.TnITTtw-hidden {
+    display: none;
+}</style><style type="text/css">@-webkit-keyframes load4 {
+    0%,
+    100% {
+        box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+    }
+    12.5% {
+        box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    25% {
+        box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    37.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+        box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+        box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+}
+
+@keyframes load4 {
+    0%,
+    100% {
+        box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+    }
+    12.5% {
+        box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    25% {
+        box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    37.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+        box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+        box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+}</style><style type="text/css">/* This is not a zero-length file! */</style></head>
+<body id="demo" style="">
+
+
+<div id="header"><div class="inner">
+<ul id="nav">
+<li id="logo"><a href="https://www.swiper.com.cn/"><img alt="Swiper中文网" title="Swiper中文网" src="./Swiper演示 - Swiper中文网_files/logo.png" width="82" height="50"></a></li>
+<li><a href="https://www.swiper.com.cn/">首页</a></li>
+<li class="sub" onmouseover="display(this)" onmouseout="ndisplay(this)"><a href="https://www.swiper.com.cn/demo/index.html#">在线演示</a> <b></b>
+<ul>
+<li><a href="https://www.swiper.com.cn/demo/index.html">Swiper 基础演示</a> </li>
+<li><a href="https://www.swiper.com.cn/demo/senior/index.html">Swiper 精彩应用（移动）</a> </li>
+<li><a href="https://www.swiper.com.cn/demo/web/index.html">Swiper 精彩应用（PC）</a> </li>
+</ul>
+</li>
+<li class="sub" onmouseover="display(this)" onmouseout="ndisplay(this)"><a href="https://www.swiper.com.cn/demo/index.html#">中文教程</a>  <b></b>
+<ul>
+<li><a href="https://www.swiper.com.cn/usage/index.html">Swiper 使用方法</a> </li>
+<li><a href="https://www.swiper.com.cn/usage/animate/index.html">Swiper Animate 使用方法</a> </li>
+<li><a href="https://www.swiper.com.cn/usage/dom7/index.html">Swiper 与DOM</a> </li>
+<li><a href="https://www.swiper.com.cn/demo/index.html#" target="_blank" onclick="javascript:window.open(&#39;https://swiperjs.com/react/&#39;);return false;">在React 中使用Swiper</a> </li>
+<li><a href="https://www.swiper.com.cn/demo/index.html#" target="_blank" onclick="javascript:window.open(&#39;https://swiperjs.com/svelte/&#39;);return false;">在Svelte 中使用Swiper</a> </li>
+<li><a href="https://www.swiper.com.cn/demo/index.html#" target="_blank" onclick="javascript:window.open(&#39;https://swiperjs.com/angular/&#39;);return false;">在Angular 中使用Swiper</a> </li>
+<li><a href="https://www.swiper.com.cn/demo/index.html#" target="_blank" onclick="javascript:window.open(&#39;https://swiperjs.com/vue/&#39;);return false;">在Vue 中使用Swiper</a> </li>
+<li><a href="https://www.swiper.com.cn/demo/index.html#" target="_blank" onclick="javascript:window.open(&#39;https://github.com/surmon-china/vue-awesome-swiper&#39;);return false;">在Vue 中使用低版本Swiper(3/4)</a> </li>
+
+
+</ul>
+</li>
+<li><a href="https://www.swiper.com.cn/api/index.html">API 文档</a>  </li>
+
+<li class="sub" onmouseover="display(this)" onmouseout="ndisplay(this)"><a href="https://www.swiper.com.cn/demo/index.html#">获取Swiper</a>  <b></b>
+<ul>
+<li><a href="https://www.swiper.com.cn/download/index.html">下载Swiper</a>  </li>
+<li><a href="https://www.swiper.com.cn/cdn/index.html">Swiper CDN地址</a></li>
+
+</ul></li>
+
+<li class="sub" onmouseover="display(this)" onmouseout="ndisplay(this)"><a href="https://www.swiper.com.cn/demo/index.html#">关于我们</a>  <b></b>
+<ul>
+<li><a href="https://www.swiper.com.cn/about/us/index.html">关于Swiper</a> </li>
+<li><a href="https://www.swiper.com.cn/about/user/index.html">优秀企业案例展示</a> </li>
+<li><a href="https://www.swiper.com.cn/about/contact/index.html">联系我们/加群讨论</a> </li>
+<li><a href="https://www.swiper.com.cn/about/cooperation/index.html">广告服务</a> </li>
+<li><a href="https://www.swiper.com.cn/about/link/index.html">友情链接</a> </li>
+
+</ul>
+</li>
+
+<li class="sub" onmouseover="display(this)" onmouseout="ndisplay(this)"><a href="https://3.swiper.com.cn/" target="_blank">Swiper3</a><b></b>
+<ul>
+<li><a href="https://3.swiper.com.cn/demo/index.html" target="_blank">Swiper3 基础演示</a> </li>
+<li><a href="https://3.swiper.com.cn/demo/senior/index.html" target="_blank">Swiper3 移动端实例</a> </li>
+<li><a href="https://3.swiper.com.cn/demo/web/index.html" target="_blank">Swiper3 电脑端实例</a> </li>
+<li><a href="https://3.swiper.com.cn/api/index.html" target="_blank">Swiper3 API 文档</a> </li>
+</ul>
+</li>
+<li class="sub" onmouseover="display(this)" onmouseout="ndisplay(this)"><a href="https://2.swiper.com.cn/" target="_blank">Swiper2</a><b></b>
+<ul>
+<li><a href="https://2.swiper.com.cn/demo/index.html" target="_blank">Swiper2 基础演示</a> </li>
+<li><a href="https://2.swiper.com.cn/demo/senior/index.html" target="_blank">Swiper2 实例</a> </li>
+<li><a href="https://2.swiper.com.cn/api/index.html" target="_blank">Swiper2 API 文档</a> </li>
+</ul>
+
+</li>
+<li class="tobbs"><a href="http://bbs.swiper.com.cn/" target="_blank">交流分享</a></li>
+<li><a href="https://www.swiper.com.cn/demo/index.html#" target="_blank" onclick="javascript:window.open(&#39;https://swiperjs.com/&#39;);return false;">Swiper 英文网</a></li>
+</ul>
+<div class="search" id="search">
+      <form name="formsearch" action="https://www.swiper.com.cn/plus/search.php">
+        <div class="form">
+           <input type="hidden" name="kwtype" value="0">
+           <input name="q" type="text" class="search-keyword" id="search-keyword" value="搜索参数" onfocus="if(this.value==&#39;搜索参数&#39;){this.value=&#39;&#39;;}" onblur="if(this.value==&#39;&#39;){this.value=&#39;搜索参数&#39;;}" style="width:130px;">
+          <button type="submit" class="search-submit">搜索</button>
+        </div>
+        </form>
+        
+    </div>
+</div></div>
+<div class="full"><div class="innerbox" style="width:1080px;">
+
+
+<h1 class="sw-title">
+	Swiper 基础演示</h1>
+<br>
+<p>
+	你可以下载以下全部实例：<a href="https://www.swiper.com.cn/download/index.html#file1" target="_blank">下载地址</a></p>
+<div class="demo">
+<h3>基础滑动(010)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/010-default.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="010-default.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/010-default.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>按钮切换(020)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/020-navigation.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="020-navigation.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/020-navigation.html"></iframe>
+</div>
+</div>
+
+<div class="demo">
+<h3>弹性切换</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/elastic.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="elastic.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/elastic.html"></iframe>
+</div>
+</div>
+
+
+
+
+
+<div class="demo">
+<h3>分页器(030)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/030-pagination.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="030-pagination.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/030-pagination.html"></iframe>
+</div>
+</div>
+
+
+<div class="demo">
+<h3>分页器 / 动态指示点(040)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/040-pagination-dynamic.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="040-pagination-dynamic.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/040-pagination-dynamic.html"></iframe>
+</div>
+</div>
+
+<div class="demo">
+	<h3>
+		赞助商广告</h3>
+	
+	<div class="demo-iframe loaded"><div class="adbox">
+		<script async="" src="./Swiper演示 - Swiper中文网_files/f(3).txt"></script>
+<!-- 普通实例展示 -->
+<ins class="adsbygoogle" style="display: inline-block; width: 970px; height: 0px;" data-ad-client="ca-pub-8527457878009645" data-ad-slot="5009205410" data-adsbygoogle-status="done" data-ad-status="unfilled"><div id="aswift_0_host" style="border: none; height: 0px; width: 970px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: hidden; opacity: 0;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_0" name="aswift_0" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 970px; height: 0px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="970" height="0" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Swiper演示 - Swiper中文网_files/ads.html" data-google-container-id="a!1" data-google-query-id="CITeiPHcxfoCFQlFYAod0mUMaw" data-load-complete="true"></iframe></div></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<ul><li class="active"></li><li></li><li></li><li></li><li></li></ul>
+</div>
+</div>
+</div>
+
+<div class="demo">
+<h3>进度条指示器(050)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/050-pagination-progress.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="050-pagination-progress.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/050-pagination-progress.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>分式指示器(060)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/060-pagination-fraction.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="060-pagination-fraction.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/060-pagination-fraction.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>自定义指示器(070)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/070-pagination-custom.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="070-pagination-custom.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/070-pagination-custom.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>滚动条(080)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/080-scrollbar.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="080-scrollbar.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/080-scrollbar.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>垂直切换(090)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/090-vertical.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="090-vertical.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/090-vertical.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>slides之间设置间隔(100)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/100-space-between.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="100-space-between.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/100-space-between.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>在过渡之前执行动画</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/100-transition-start.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="100-transition-start.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/100-transition-start.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>带缓动的拖动效果</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/103-virtualTranslate.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="103-virtualTranslate.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/103-virtualTranslate.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>一次显示多个slides(110)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/110-slides-per-view.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="110-slides-per-view.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/110-slides-per-view.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>异形的slide</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/slides-scale.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="slides-scale.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/slides-scale.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>自定义slide宽度 / Carousel模式(120)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/120-slides-per-view-auto.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="120-slides-per-view-auto.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/120-slides-per-view-auto.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>slides居中(130)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/130-centered.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+ <iframe data-src="130-centered.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/130-centered.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>Slides居中 + 自定义Slides宽度(140)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/140-centered-auto.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="140-centered-auto.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/140-centered-auto.html"></iframe>
+</div>
+</div>
+
+<div class="demo">
+<h3>CSS模式(145)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/145-css-mode.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="145-css-mode.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/145-css-mode.html"></iframe>
+</div>
+</div>
+
+<div class="demo">
+<h3>free模式 / 不贴合边缘(150)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/150-freemode.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="150-freemode.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/150-freemode.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>内容滚动(160)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/160-scroll-container.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="160-scroll-container.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/160-scroll-container.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>Slides 网格分布-多行多列(170)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/170-grid.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="170-grid.html" scrolling="no" frameborder="0" style="height:430px;" src="./Swiper演示 - Swiper中文网_files/170-grid.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>在Swiper 中嵌套Swiper(180)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/180-nested.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="180-nested.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/180-nested.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>抓手光标(190)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/190-grab-cursor.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="190-grab-cursor.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/190-grab-cursor.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>Loop模式 / 无限循环(200)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/200-infinite-loop.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="200-infinite-loop.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/200-infinite-loop.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>Loop模式+ Slides分组(210)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/210-infinite-loop-with-slides-per-group.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="210-infinite-loop-with-slides-per-group.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/210-infinite-loop-with-slides-per-group.html"></iframe>
+</div>
+</div>
+
+<div class="demo">
+<h3>分组跳过(211)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/211-slides-per-group-skip.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="211-slides-per-group-skip.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/211-slides-per-group-skip.html"></iframe>
+</div>
+</div>
+
+<div class="demo">
+<h3>下拉释放刷新，上滑反弹加载</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/refresh-and-load-swiper4.x.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="refresh-and-load-swiper4.x.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/refresh-and-load-swiper4.x.html"></iframe>
+</div>
+</div>
+
+
+
+
+<div class="demo">
+<h3>渐变切换(220)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/220-effect-fade.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="220-effect-fade.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/220-effect-fade.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>3D方块切换(230)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/230-effect-cube.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="230-effect-cube.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/230-effect-cube.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>3D滚动切换(240)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/240-effect-coverflow.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="240-effect-coverflow.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/240-effect-coverflow.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>3D翻转切换(250)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/250-effect-flip.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="250-effect-flip.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/250-effect-flip.html"></iframe>
+</div>
+</div>
+
+<div class="demo">
+	<h3>
+		赞助商广告</h3>
+	
+	<div class="demo-iframe loaded"><div class="adbox">
+  
+		<script async="" src="./Swiper演示 - Swiper中文网_files/f(3).txt"></script>
+<!-- 普通实例展示2 -->
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-8527457878009645" data-ad-slot="7434085017" data-adsbygoogle-status="done" data-ad-status="unfilled"><div id="aswift_1_host" style="border: none; height: 280px; width: 336px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:336px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="336" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Swiper演示 - Swiper中文网_files/ads(1).html" data-google-container-id="a!2" data-google-query-id="CJe1q_LcxfoCFdRLDwIdKq8NgQ" data-load-complete="true"></iframe></div></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<ul><li class="active"></li><li></li><li></li><li></li><li></li></ul>
+
+</div>
+</div>
+</div>
+
+<div class="demo">
+<h3>卡片切换(255)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/255-effect-cards.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="255-effect-cards.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/255-effect-cards.html"></iframe>
+</div>
+</div>
+
+<div class="demo">
+<h3>多种创意切换-新窗口打开浏览(257)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/257-effect-creative.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="257-effect-creative.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/257-effect-creative.html"></iframe>
+</div>
+</div>
+
+
+<div class="demo">
+<h3>Progress</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/progress-effect.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="progress-effect.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/progress-effect.html"></iframe>
+</div>
+</div>
+
+
+
+
+<div class="demo">
+<h3>另类的切换效果</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/other-translate.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="other-translate.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/other-translate.html"></iframe>
+</div>
+</div>
+
+<div class="demo">
+<h3>同向切换+内页过长滚动</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/91-vertical-nested.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="91-vertical-nested.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/91-vertical-nested.html"></iframe>
+</div>
+</div>
+
+
+
+<div class="demo">
+<h3>键盘控制(260)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/260-keyboard-control.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="260-keyboard-control.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/260-keyboard-control.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>鼠标控制(270)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/270-mousewheel-control.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="270-mousewheel-control.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/270-mousewheel-control.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>自动切换(280)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/280-autoplay.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="280-autoplay.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/280-autoplay.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>动态Slides(290)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/290-manipulation.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="290-manipulation.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/290-manipulation.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>缩略图控制 / Swiper互相控制(300)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/300-thumbs-gallery.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="300-thumbs-gallery.html" scrolling="no" frameborder="0" style="height: 600px" src="./Swiper演示 - Swiper中文网_files/300-thumbs-gallery.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>缩略图控制 / 无限循环(310)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/310-thumbs-gallery-loop.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="310-thumbs-gallery-loop.html" scrolling="no" frameborder="0" style="height: 600px" src="./Swiper演示 - Swiper中文网_files/310-thumbs-gallery-loop.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>一个页面中初始化多个Swiper(320)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/320-multiple-swipers.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="320-multiple-swipers.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/320-multiple-swipers.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>散列导航(330)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/330-hash-navigation.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="330-hash-navigation.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/330-hash-navigation.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>历史记录(340)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/340-history.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="340-history.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/340-history.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>RTL 布局(350)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/350-rtl.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="350-rtl.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/350-rtl.html"></iframe>
+ </div>
+</div>
+<div class="demo">
+<h3>视差效果(360)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/360-parallax.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="360-parallax.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/360-parallax.html"></iframe>
+</div>
+</div>
+
+<div class="demo">
+<h3>延迟加载图片(370)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/370-lazy-load-images.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="370-lazy-load-images.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/370-lazy-load-images.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>按屏幕宽度的响应式设置(380)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/380-responsive-breakpoints.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="380-responsive-breakpoints.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/380-responsive-breakpoints.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>按屏幕宽高比的响应式设置(381)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/381-ratio-breakpoints.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="381-ratio-breakpoints.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/381-ratio-breakpoints.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>自动高度(390)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/390-autoheight.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="390-autoheight.html" scrolling="no" frameborder="0" style="height: 500px" src="./Swiper演示 - Swiper中文网_files/390-autoheight.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>缩放(400)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/400-zoom.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="400-zoom.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/400-zoom.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>虚拟Slides(410)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/410-virtual-slides.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="410-virtual-slides.html" scrolling="no" frameborder="0" style="height: 400px" src="./Swiper演示 - Swiper中文网_files/410-virtual-slides.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>自定义插件(420)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/420-custom-plugin.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="420-custom-plugin.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/420-custom-plugin.html"></iframe>
+</div>
+</div>
+<div class="demo">
+<h3>可滑动菜单(430)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/430-slideable-menu.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="430-slideable-menu.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/430-slideable-menu.html"></iframe>
+</div>
+</div>
+
+<div class="demo">
+<h3>改变切换方向(440)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/440-change-direction.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="440-change-direction.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/440-change-direction.html"></iframe>
+</div>
+</div>
+
+<div class="demo">
+<h3>Slides可见性判断(450)</h3>
+<div class="demo-links"><a href="https://www.swiper.com.cn/demo/450-watchslidesvisibility.html" target="_blank" class="demo-link-new-window">在新窗口打开</a></div>
+<div class="demo-iframe loaded">
+<iframe data-src="450-watchslidesvisibility.html" scrolling="no" frameborder="0" src="./Swiper演示 - Swiper中文网_files/450-watchslidesvisibility.html"></iframe>
+</div>
+</div>
+
+<p class="start-use">
+	<a href="https://www.swiper.com.cn/usage/index.html">开始使用Swiper</a></p>
+<script src="./Swiper演示 - Swiper中文网_files/jquery-1.10.1.min.js.下载"></script><script>
+
+function lazyLoadDemos() {
+		$('.demo').each(function() {
+			var frameHolder = $(this).find('.demo-iframe');
+			if (frameHolder.hasClass('loaded')) return;
+			var frame = frameHolder.find('iframe');
+			var src = frame.attr('data-src');
+			if (frameHolder.offset().top < ($(window).scrollTop() + $(window).height() + 50)) {
+				frameHolder.addClass('loaded');
+				frame.attr('src', src);
+			}
+		});
+	}
+	if ($('.demo').length > 0) {
+		$('.demo').each(function() {
+			var t = $(this);
+			var demoFile = t.find('iframe').attr('data-src');
+		});
+		$(window).on('scroll resize', function() {
+			lazyLoadDemos();
+		});
+		lazyLoadDemos();
+	}
+</script>
+
+
+
+&nbsp;
+
+
+
+
+</div></div>
+<div id="footer">
+
+  <div class="inner">
+
+  <dl class="link">
+
+  <dt>网站地图</dt>
+
+  <dd><a href="http://www.swiper.com.cn/">Swiper5中文网</a></dd>
+
+  <dd><a href="http://3.swiper.com.cn/">Swiper3中文网</a></dd>
+
+  <dd><a href="http://2.swiper.com.cn/">Swiper2中文网</a></dd>
+
+  <dd><a href="http://bbs.swiper.com.cn/">Swiper资源·交流</a></dd>
+
+  <dd><a href="https://www.swiper.com.cn/demo/index.html#" target="_blank" onclick="javascript:window.open(&#39;https://www.xuansite.com&#39;);return false;">日本网站设计欣赏</a></dd>
+
+  <dd><a href="https://www.tweenmax.com.cn/" target="_blank">Tweenmax 动画插件</a></dd>
+
+  </dl>
+
+  <dl class="link">
+
+  <dt>合作伙伴</dt>
+
+<dd><a href="https://www.excellentdue.com/%E7%BD%91%E8%AF%BE%E4%BB%A3%E4%BF%AE/" target="_blank" date="2019-12-30">网课代修</a></dd>
+
+
+
+
+<dd><a href="http://www.rn998.net/" target="_blank">滤油机</a></dd>
+
+<dd><a href="https://www.hwbangshou.com/" target="_blank">代写</a></dd>
+
+<dd><a href="https://www.cmseasy.cn/" target="_blank">免费企业网站模板</a></dd>
+
+<dd><a href="https://www.topimage.cn/" target="_blank" date="2019-6-13">英文字体</a></dd>
+
+<dd><a href="https://qifu.shangyexinzhi.com/" target="_blank">企服商城</a></dd>
+
+<dd><a href="https://www.naimal.com/" target="_blank" date="2021-10-27">耐美尔</a></dd>
+
+<dd><a href="https://www.fxiaoke.com/" target="_blank">crm</a></dd>
+
+<dd><a href="https://cn.bluehost.com/" target="_blank">香港主机</a></dd>
+
+
+
+<dd><a href="https://www.gstarcad.com/" target="_blank">CAD</a></dd>
+
+
+<dd><a href="https://www.beisen.com/product/corehr/" target="_blank">ehr软件</a></dd>
+
+<dd><a href="https://www.szwhd.com.cn/" target="_blank">imtoken</a></dd>
+
+
+
+<!--<dd class="buy"><a href="#" target="_blank" onclick="javascript:window.open('https://item.taobao.com/item.htm?id=542872801127');return false;">购买友情链接</a></dd>-->
+
+  </dl>
+
+   <dl>
+
+  <dt>致辞</dt>
+
+  <dd>感谢idangero创造的移动端触摸滑动插件Swiper带给我们的无限精彩。</dd>
+
+  <dd>&nbsp;</dd>
+
+  <dt>赞助我们</dt>
+  <dd>用于服务器费用</dd>
+
+  <dd><img src="./Swiper演示 - Swiper中文网_files/pay_ali_swiper.png" width="100"> <img src="./Swiper演示 - Swiper中文网_files/pay_wx_swiper.png" width="100" style="margin-left:20px;"></dd>
+
+  </dl>
+
+ <dl class="link">
+
+  <dt>友情链接<a href="https://www.swiper.com.cn/about/link/index.html" style="float:right; font-size:12px; margin-top:5px;">更多友情链接&gt;</a></dt>
+
+
+
+
+<dd><a href="https://www.icheruby.net/" target="_blank" date="2021-6-4">试管婴儿</a></dd>
+
+ 
+
+
+
+  
+  <dd><a href="https://www.zhaotie.com/" target="_blank">招贴网</a></dd> 
+  
+  
+  
+  
+
+
+  
+  
+
+   
+  <!-- <dd><a href="https://www.zwsoft.cn/" target="_blank">CAD</a></dd> -->          
+   
+
+   
+   
+   <dd><a href="https://www.csjplatform.com/solution" target="_blank">APP广告变现</a></dd> 
+   
+      <dd><a href="http://naoke.39.net/" target="_blank">治疗癫痫病医院</a></dd> 
+      <dd><a href="https://www.ysgc.vip/" target="_blank">影视工场</a></dd>
+  
+   
+    
+
+    
+ 
+ 
+
+ 
+
+    
+   
+    <dd><a href="http://www.wbz8.com/" target="_blank">七维体育</a></dd>
+  
+    <dd><a href="https://www.lgyy.cc/" target="_blank">蓝光影院</a></dd>
+  
+
+   
+    <dd><a href="http://www.hcharts.cn/" target="_blank">Highcharts中文网</a></dd>
+
+  <dd><a href="http://www.lanrenzhijia.com/" target="_blank">jquery特效</a></dd> 
+   
+ <dd><a href="http://www.hljqzx.com/" target="_blank">起点中文</a></dd>   
+   
+  </dl> 
+
+  
+
+  <div id="copyright">
+
+  Copyright © 2014-2019 Swiper中文网,<a href="https://beian.miit.gov.cn/" style="color:inherit; text-decoration:none;" rel="nofollow" target="_blank">粤ICP备15001020号</a>, All Rights Reserved。   </div>
+
+  
+
+  </div>
+
+</div>
+
+
+
+<div id="totop" style="display: none;">
+
+</div>
+
+
+
+<script language="javascript">
+
+function display(li){    
+
+li.className='sub active';
+
+var subdis=li.getElementsByTagName("ul")[0];    
+
+subdis.style.display="block";    
+
+}
+
+function ndisplay(li){ 
+
+li.className='sub noactive';   
+
+var subdis=li.getElementsByTagName("ul")[0];        
+
+subdis.style.display="None";    
+
+}
+
+var preBtn=document.querySelectorAll('.pre-btn');
+
+for (var j=0; j<preBtn.length; j++) {
+
+preBtn[j].onclick = function(){
+
+	this.style.display='none';
+
+	this.parentNode.querySelector('.pre-load').style.display='none';
+
+	myframe=this.parentNode.querySelector('iframe');
+
+	framesrc=myframe.attributes["data-src"].value;
+
+	myframe.setAttribute("src",framesrc);
+
+}
+
+}
+
+
+
+$("#totop").click(function() {
+
+      $("html,body").animate({scrollTop:0}, 300);
+
+  }); 
+
+$(window).scroll(function () {
+
+  
+
+    if ($(window).scrollTop() > 800) {
+
+         $("#totop").fadeIn(300);
+
+     }
+
+     else {
+
+       $("#totop").fadeOut(300);
+
+     }
+
+  });
+
+</script>
+
+
+
+<script src="./Swiper演示 - Swiper中文网_files/swiperAd.js.下载"></script>
+
+
+<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_2_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Swiper演示 - Swiper中文网_files/ads(2).html" data-google-container-id="a!3" data-load-complete="true"></iframe></div></ins><textarea id="BFI_DATA" style="width: 1px; height: 1px; display: none;"></textarea><title> </title><div id="WidgetFloaterPanels" translate="no" style="display: none; text-align: left; direction: ltr; visibility: hidden;" class="LTRStyle"> <div id="WidgetFloater" style="display: none" onmouseover="Microsoft.Translator.OnMouseOverFloater()" onmouseout="Microsoft.Translator.OnMouseOutFloater()"> <div id="WidgetLogoPanel"> <span id="WidgetTranslateWithSpan"><span>TRANSLATE with </span><img id="FloaterLogo"></span> <span id="WidgetCloseButton" title="Exit Translation" onclick="Microsoft.Translator.FloaterOnClose()">x</span></div> <div id="LanguageMenuPanel"> <div class="DDStyle_outer"><input name="LanguageMenu_svid" type="text" id="LanguageMenu_svid" style="display:none;" autocomplete="on" value="en" onclick="this.select()"> <input name="LanguageMenu_textid" type="text" id="LanguageMenu_textid" style="display:none;" autocomplete="on" onclick="this.select()"> <span onselectstart="return false" tabindex="0" class="DDStyle" id="__LanguageMenu_header" onclick="return LanguageMenu &amp;&amp; !LanguageMenu.Show(&#39;__LanguageMenu_popup&#39;, event);" onkeydown="return LanguageMenu &amp;&amp; !LanguageMenu.Show(&#39;__LanguageMenu_popup&#39;, event);">English</span> <div style="position:relative;text-align:left;left:0;"><div style="position:absolute;width:;left:0px;"><div class="DDStyle" style="display:none;" id="__LanguageMenu_popup"> <table id="LanguageMenu" border="0"> <tbody><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ar&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#ar">Arabic</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;he&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#he">Hebrew</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;pl&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#pl">Polish</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;bg&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#bg">Bulgarian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;hi&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#hi">Hindi</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;pt&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#pt">Portuguese</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ca&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#ca">Catalan</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;mww&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#mww">Hmong Daw</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ro&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#ro">Romanian</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;zh-CHS&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#zh-CHS">Chinese Simplified</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;hu&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#hu">Hungarian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ru&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#ru">Russian</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;zh-CHT&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#zh-CHT">Chinese Traditional</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;id&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#id">Indonesian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;sk&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#sk">Slovak</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;cs&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#cs">Czech</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;it&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#it">Italian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;sl&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#sl">Slovenian</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;da&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#da">Danish</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ja&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#ja">Japanese</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;es&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#es">Spanish</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;nl&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#nl">Dutch</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;tlh&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#tlh">Klingon</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;sv&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#sv">Swedish</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;en&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#en">English</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ko&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#ko">Korean</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;th&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#th">Thai</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;et&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#et">Estonian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;lv&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#lv">Latvian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;tr&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#tr">Turkish</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;fi&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#fi">Finnish</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;lt&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#lt">Lithuanian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;uk&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#uk">Ukrainian</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;fr&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#fr">French</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ms&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#ms">Malay</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ur&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#ur">Urdu</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;de&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#de">German</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;mt&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#mt">Maltese</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;vi&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#vi">Vietnamese</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;el&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#el">Greek</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;no&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#no">Norwegian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;cy&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#cy">Welsh</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ht&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#ht">Haitian Creole</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;fa&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="https://www.swiper.com.cn/demo/index.html#fa">Persian</a></td><td></td> </tr> </tbody></table> <img alt="" style="height:7px;width:17px;border-width:0px;left:20px;"> </div></div></div></div> <script type="text/javascript"> var LanguageMenu; var LanguageMenu_keys=["ar","bg","ca","zh-CHS","zh-CHT","cs","da","nl","en","et","fi","fr","de","el","ht","he","hi","mww","hu","id","it","ja","tlh","ko","lv","lt","ms","mt","no","fa","pl","pt","ro","ru","sk","sl","es","sv","th","tr","uk","ur","vi","cy"]; var LanguageMenu_values=["Arabic","Bulgarian","Catalan","Chinese Simplified","Chinese Traditional","Czech","Danish","Dutch","English","Estonian","Finnish","French","German","Greek","Haitian Creole","Hebrew","Hindi","Hmong Daw","Hungarian","Indonesian","Italian","Japanese","Klingon","Korean","Latvian","Lithuanian","Malay","Maltese","Norwegian","Persian","Polish","Portuguese","Romanian","Russian","Slovak","Slovenian","Spanish","Swedish","Thai","Turkish","Ukrainian","Urdu","Vietnamese","Welsh"]; var LanguageMenu_callback=function(){ }; var LanguageMenu_popupid='__LanguageMenu_popup'; </script> </div> <div id="CTFLinksPanel"> <span id="ExternalLinksPanel"><a id="HelpLink" title="Help" target="_blank" href="https://go.microsoft.com/?linkid=9722454"> <img id="HelpImg"></a> <a id="EmbedLink" href="javascript:Microsoft.Translator.FloaterShowEmbed()" title="Get this widget for your own site"> <img id="EmbedImg"></a> <a id="ShareLink" title="Share translated page with friends" href="javascript:Microsoft.Translator.FloaterShowSharePanel()"> <img id="ShareImg"></a> </span> </div> <div id="FloaterProgressBar"> <span id="ProgressFill"></span> </div> </div> <div id="WidgetFloaterCollapsed" style="display: none" onmouseover="Microsoft.Translator.OnMouseOverFloater()"> <span>TRANSLATE with </span><img id="CollapsedLogoImg"></div> <div id="FloaterSharePanel" style="display: none"> <div id="ShareTextDiv"> <span id="ShareTextSpan"> COPY THE URL BELOW </span> </div> <div id="ShareTextboxDiv"> <input name="ShareTextbox" type="text" id="ShareTextbox" readonly="readonly" onclick="this.select()"> <!--a id="TwitterLink" title="Share on Twitter"> <img id="TwitterImg" /></a> <a-- id="FacebookLink" title="Share on Facebook"> <img id="FacebookImg" /></a--> <a id="EmailLink" title="Email this translation"> <img id="EmailImg"></a> </div> <div id="ShareFooter"> <span id="ShareHelpSpan"><a id="ShareHelpLink"> <img id="ShareHelpImg"></a></span> <span id="ShareBackSpan"><a id="ShareBack" href="javascript:Microsoft.Translator.FloaterOnShareBackClick()" title="Back To Translation"> Back</a></span> </div> <input name="EmailSubject" type="hidden" id="EmailSubject" value="Check out this page in {0} translated from {1}"> <input name="EmailBody" type="hidden" id="EmailBody" value="Translated: {0}%0d%0aOriginal: {1}%0d%0a%0d%0aAutomatic translation powered by Microsoft® Translator%0d%0ahttp://www.bing.com/translator?ref=MSTWidget"> <input type="hidden" id="ShareHelpText" value="This link allows visitors to launch this page and automatically translate it to {0}."> </div> <div id="FloaterEmbed" style="display: none"> <div id="EmbedTextDiv"> <span id="EmbedTextSpan">EMBED THE SNIPPET BELOW IN YOUR SITE</span> <a id="EmbedHelpLink" title="Copy this code and place it into your HTML."> <img id="EmbedHelpImg"></a> </div> <div id="EmbedTextboxDiv"> <input name="EmbedSnippetTextBox" type="text" id="EmbedSnippetTextBox" readonly="readonly" value="&lt;div id=&#39;MicrosoftTranslatorWidget&#39; class=&#39;Dark&#39; style=&#39;color:white;background-color:#555555&#39;&gt;&lt;/div&gt;&lt;script type=&#39;text/javascript&#39;&gt;setTimeout(function(){var s=document.createElement(&#39;script&#39;);s.type=&#39;text/javascript&#39;;s.charset=&#39;UTF-8&#39;;s.src=((location &amp;&amp; location.href &amp;&amp; location.href.indexOf(&#39;https&#39;) == 0)?&#39;https://ssl.microsofttranslator.com&#39;:&#39;http://www.microsofttranslator.com&#39;)+&#39;/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&amp;ctf=true&amp;ui=true&amp;settings=manual&amp;from=en&#39;;var p=document.getElementsByTagName(&#39;head&#39;)[0]||document.documentElement;p.insertBefore(s,p.firstChild); },0);&lt;/script&gt;" onclick="this.select()"> </div> <div id="EmbedNoticeDiv"><span id="EmbedNoticeSpan">Enable collaborative features and customize widget: <a href="http://www.bing.com/widget/translator" target="_blank">Bing Webmaster Portal</a></span></div> <div id="EmbedFooterDiv"><span id="EmbedBackSpan"><a href="javascript:Microsoft.Translator.FloaterOnEmbedBackClick()" title="Back To Translation">Back</a></span></div> </div> <script type="text/javascript"> var intervalId = setInterval(function () { if (MtPopUpList) { LanguageMenu = new MtPopUpList(); var langMenu = document.getElementById(LanguageMenu_popupid); var origLangDiv = document.createElement("div"); origLangDiv.id = "OriginalLanguageDiv"; origLangDiv.innerHTML = "<span id='OriginalTextSpan'>ORIGINAL: </span><span id='OriginalLanguageSpan'></span>"; langMenu.appendChild(origLangDiv); LanguageMenu.Init('LanguageMenu', LanguageMenu_keys, LanguageMenu_values, LanguageMenu_callback, LanguageMenu_popupid); window["LanguageMenu"] = LanguageMenu; clearInterval(intervalId); } }, 1); </script> </div><iframe src="./Swiper演示 - Swiper中文网_files/aframe.html" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="./Swiper演示 - Swiper中文网_files/zrt_lookup.html" style="display: none;"></iframe></html>

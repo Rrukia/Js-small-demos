@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX demo</title>
+    <style>
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        td {
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table id="tbody">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>书名</td>
+                <td>作者</td>
+                <td>出版社</td>
+                <td>操作</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ID</td>
+                <td>书名</td>
+                <td>作者</td>
+                <td>出版社</td>
+                <td>操作</td>
+            </tr>
+        </tbody>
+    </table>
+
+    书名：<input type="text" id="bookname">
+    <br>
+    作者：<input type="text" id="author">
+    <br>
+    出版：<input type="text" id="publisher">
+    <br>
+    <input type="submit" value="添加" id="btn">
+    <hr>
+
+    <script src="./jQuery.min.js"></script>
+    <script>
+        getBookList();
+        let tbody = document.querySelector('tbody');
+
+        function getBookList() {
+            $.get('http://www.liulongbin.top:3006/api/getbooks', function (res) {
+
+                if (res.status !== 200) return console.log('大失败！');
+                console.log(res.data);
+
+                var data = [];
+
+                for (let i in res.data) {
+                    data.push(`<tr><td>${res.data[i].id}</td><td>${res.data[i].bookname}</td><td>${res.data[i].author}</td><td>${res.data[i].publisher}</td><td><a href="javascrpt:;">删除</a></td></tr>`);
+                }
+
+                tbody.innerHTML = data.join('');
+            });
+        }
+
+        tbody.addEventListener('click', function (e) {
+            if (e.target.nodeName == 'A') {
+                let delid = e.target.parentNode.parentNode.children[0].innerHTML;
+                $.get('http://www.liulongbin.top:3006/api/delbook', { id: delid }, (res) => { console.log(res); });
+                getBookList();
+            }
+        })
+    </script>
+    <script>
+        let btn = document.querySelector('#btn');
+        btn.addEventListener('click', () => {
+            let bookname = document.querySelector('#bookname').value;
+            let author = document.querySelector('#author').value;
+            let publisher = document.querySelector('#publisher').value;
+
+            let newbook = { bookname: bookname, author: author, publisher: publisher };
+            $.post('http://www.liulongbin.top:3006/api/addbook', newbook, (res) => {
+                console.log(res);
+                getBookList();
+            });
+        })
+    </script>
+</body>
+
+</html>

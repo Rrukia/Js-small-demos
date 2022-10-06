@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #content {
+            resize: none;
+            width: 1200px;
+            height: 50px;
+            padding: 10px;
+            border-radius: 10px;
+            overflow: auto;
+        }
+
+        form {
+            margin: 50px auto;
+            width: 1200px;
+            text-align: left;
+        }
+
+        form button {
+            float: right;
+        }
+
+        ul,
+        ol,
+        li {
+            margin-top: 30px;
+            list-style: none;
+        }
+
+        li {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin: 15px auto;
+            width: 1200px;
+            height: 50px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        .content {
+            margin-left: 10px;
+            flex: 6;
+        }
+
+        .time,
+        .username {
+            flex: 2;
+            background-color: aqua;
+            border-radius: 20px;
+            text-align: left;
+            padding-left: 30px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <textarea name="content" id="content"></textarea>
+        <br>
+        用户名：<input type="text" name="username" id="username">
+        <button type="submit">发表</button>
+    </form>
+
+    <hr>
+    <ul>
+        <li>
+            <div class="content">Content</div>
+            <div class="username">用户名：</div>
+        </li>
+    </ul>
+
+    <script src="./jQuery.min.js"></script>
+    <script>
+        let btn = document.querySelector('button');
+
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            let username = document.querySelector('#username').value;
+            let content = document.querySelector('#content').value;
+            let newdata = { username: username, content: content };
+            console.log(newdata);
+            $.post('http://www.liulongbin.top:3006/api/addcmt', newdata, (res) => {
+                if (res.status !== 201) {
+                    return console.log('发送失败');
+                };
+
+                getCommentList();
+            })
+        })
+
+        getCommentList();
+        function getCommentList() {
+            let ul = document.querySelector('ul');
+
+            $.get('http://www.liulongbin.top:3006/api/cmtlist', (res) => {
+                if (res.status !== 200) {
+                    return console.log('获取评论列表失败');
+                }
+
+                let arr = [];
+                for (let i in res.data) {
+                    let temp = `<li><div class="content">${res.data[i].content}</div><div class="username">用户名：${res.data[i].username}</div><div class="time">${res.data[i].time}</div></li>`;
+                    arr.push(temp);
+                }
+
+                ul.innerHTML = arr.join('');
+
+            })
+        };
+    </script>
+</body>
+
+</html>

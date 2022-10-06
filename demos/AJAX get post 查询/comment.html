@@ -104,6 +104,9 @@
         })
 
         getCommentList();
+        setInterval(() => {
+            getCommentList();
+        }, 500);
         function getCommentList() {
             let ul = document.querySelector('ul');
 

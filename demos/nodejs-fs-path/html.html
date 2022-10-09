@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        input {
+            position: absolute;
+            left: calc(50% - 225px);
+            top: 0px;
+            width: 450px;
+            height: 40px;
+            padding: 10px;
+        }
+
+        button {
+            position: absolute;
+            left: calc(50% + 225px);
+            top: 0px;
+            height: 40px;
+            width: 60px;
+        }
+
+        form {
+            position: relative;
+            margin-top: 100px;
+            width: 100%;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        ul {
+            display: none;
+            width: 450px;
+            position: absolute;
+            left: calc(50% - 225px);
+            top: 40px;
+            text-align: left;
+            border: 1px solid black;
+            border-top: 0;
+            border-radius: 3px;
+        }
+
+        li {
+            padding: 5px;
+            padding-left: 10px;
+        }
+
+        li:hover {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="javascript:;">
+        <input type="text"><button type="submit">确认</button>
+        <ul></ul>
+    </form>
+
+    <!-- JavaScript -->
+    <script src="./jQuery.min.js"></script>
+    <script>
+        let form = document.querySelector('form')
+        let ipt = document.querySelector('input');
+        let timer = null;
+        let cacheIpt = {};
+
+        ipt.addEventListener('keyup', (e) => {
+            let kw = ipt.value
+            let ul = document.querySelector('ul')
+
+            // 如果为空 => 清除列表并隐藏
+            if (kw.length <= 0) {
+                ul.innerHTML = ''
+                ul.style.display = 'none'
+                return 0
+            }
+
+            // 否则 getSuggestList()
+            // 防抖
+            clearTimeout(timer)
+            timer = setTimeout(() => {
+                getSuggestList(kw)
+                ul.style.display = 'block'
+            }, 500)
+
+        })
+
+        form.addEventListener('click', (e) => {
+            if (e.target.tagName == 'LI') {
+                let ipt = document.querySelector('input')
+                btn = document.querySelector('button')
+                // 填入内容并访问
+                ipt.value = e.target.innerHTML
+                btn.click()
+            }
+        })
+
+        function getSuggestList(kw) {
+            // 本地缓存有则直接读取，否则通过 jsonp 请求查询并缓存
+            if (cacheIpt[kw]) {
+                show(cacheIpt[kw])
+            } else {
+                $.ajax({
+                    url: 'https://suggest.taobao.com/sug?q=' + kw,
+                    dataType: 'jsonp',
+                    success: (res) => {
+                        cacheIpt[kw] = res;
+                        show(res)
+                    }
+                })
+            }
+        }
+
+        function show(res) {
+            let ul = document.querySelector('ul')
+            let arr = []
+            for (let i = 0; i < res.result.length; i++) {
+                arr.push('<li>' + res.result[i][0] + '</li>')
+            }
+            ul.innerHTML = arr.join('')
+        }
+
+    </script>
+</body>
+
+</html>

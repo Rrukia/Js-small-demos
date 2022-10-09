@@ -1,0 +1,56 @@
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        input {
+            position: absolute;
+            left: calc(50% - 225px);
+            top: 0px;
+            width: 450px;
+            height: 40px;
+            padding: 10px;
+        }
+
+        button {
+            position: absolute;
+            left: calc(50% + 225px);
+            top: 0px;
+            height: 40px;
+            width: 60px;
+        }
+
+        form {
+            position: relative;
+            margin-top: 100px;
+            width: 100%;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        ul {
+            display: none;
+            width: 450px;
+            position: absolute;
+            left: calc(50% - 225px);
+            top: 40px;
+            text-align: left;
+            border: 1px solid black;
+            border-top: 0;
+            border-radius: 3px;
+        }
+
+        li {
+            padding: 5px;
+            padding-left: 10px;
+        }
+
+        li:hover {
+            background-color: gray;
+        }
+    

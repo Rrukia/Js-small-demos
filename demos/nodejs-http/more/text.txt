@@ -1,0 +1,1 @@
+你打开了 ./more/text.txt

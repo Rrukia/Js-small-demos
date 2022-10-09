@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.div-for-slides{
+    text-align: center;
+    position: relative;
+}
+
+/* slide style */
+.slides{
+    height: 250px;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.slide{
+    height: 250px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    animation: change 2s;
+}
+
+@keyframes change{
+    0%  { left: -3%; }
+    50% { left: 0.5%;  }
+    100%{ left: 0px; }
+}
+.slides img,
+.slide video{
+    width: 100%;
+    height: 100%;
+}
+.slide-number{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: larger;
+    color: rgba(255,255,255,0.6);
+    user-select: none;
+    -webkit-user-select: none;
+}
+.slide-name{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    margin: auto;
+    color: rgba(255,255,255,0.6);
+    font-size: larger;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* prev and next button */
+.prev,
+.next{
+    background-color: rgba(255,255,255,0.3);
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    padding: 10px;
+    font-size: larger;
+    position: absolute;
+    left: 0;
+    top: 110px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.next{
+    left: auto;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover{
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* dots for show current slide */
+.dots{
+    width: 100%;
+    line-height: 30px;
+}
+.dot{
+    display: inline-block;
+    border: 1px solid rgba(128, 128, 128, 0.6);
+    padding: 6px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.active,
+.dot:hover{
+    background-color: rgba(128, 128, 128, 0.6);
+}
+
+@media screen and (max-width: 500px){
+    .slide,
+    .slides{
+        height: 150px;
+    }
+    .prev,
+    .next{
+        top: 60px;
+    }
+    .dots{
+        display: none;
+    }
+}

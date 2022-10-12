@@ -1,6 +1,6 @@
 // 1 引入模块/包/路由
 const express = require('express')
-const cors = require('cors')    // Corss-origin resource sharing
+const cors = require('cors')    // Cross-origin resource sharing
 // 1.1 创建 express 实例
 const app = express()
 

@@ -1,0 +1,1 @@
+你打开了 /resource/text.txt
